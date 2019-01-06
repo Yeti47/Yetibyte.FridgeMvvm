@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yetibyte.FridgeMvvm", "Yetibyte.FridgeMvvm\Yetibyte.FridgeMvvm.csproj", "{72E11A00-C79F-4651-AE80-84D9D2F13348}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yetibyte.FridgeMvvm.WpfExtensions", "Yetibyte.FridgeMvvm.WpfExtensions\Yetibyte.FridgeMvvm.WpfExtensions.csproj", "{B14DC32B-42DA-4D1B-A81C-1DBCCB7A61DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{72E11A00-C79F-4651-AE80-84D9D2F13348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E11A00-C79F-4651-AE80-84D9D2F13348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E11A00-C79F-4651-AE80-84D9D2F13348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14DC32B-42DA-4D1B-A81C-1DBCCB7A61DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14DC32B-42DA-4D1B-A81C-1DBCCB7A61DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14DC32B-42DA-4D1B-A81C-1DBCCB7A61DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14DC32B-42DA-4D1B-A81C-1DBCCB7A61DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

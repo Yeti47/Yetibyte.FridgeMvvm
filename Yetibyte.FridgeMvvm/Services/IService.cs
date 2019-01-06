@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yetibyte.FridgeMvvm
-{
-    public class Class1
-    {
+namespace Yetibyte.FridgeMvvm.Services {
+
+    public interface IService {
+
+        string ServiceId { get; }
+
     }
+
 }

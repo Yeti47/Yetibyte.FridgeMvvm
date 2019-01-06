@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72E11A00-C79F-4651-AE80-84D9D2F13348}</ProjectGuid>
+    <ProjectGuid>{B14DC32B-42DA-4D1B-A81C-1DBCCB7A61DE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Yetibyte.FridgeMvvm</RootNamespace>
-    <AssemblyName>Yetibyte.FridgeMvvm</AssemblyName>
+    <RootNamespace>Yetibyte.FridgeMvvm.WpfExtensions</RootNamespace>
+    <AssemblyName>Yetibyte.FridgeMvvm.WpfExtensions</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,45 +30,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\DelegateCommand.cs" />
-    <Compile Include="Commands\RelayCommand.cs" />
-    <Compile Include="Core\IClosable.cs" />
-    <Compile Include="Core\ICultureProvider.cs" />
-    <Compile Include="Core\IsValidChangedEventArgs.cs" />
-    <Compile Include="Core\ObservableObject.cs" />
-    <Compile Include="Core\ObservablePropertyBackingFieldAttribute.cs" />
-    <Compile Include="Core\ValidatableObservableObject.cs" />
-    <Compile Include="DataExchange\ActionQueryResult.cs" />
-    <Compile Include="DataExchange\DatabaseAccessor.cs" />
-    <Compile Include="DataExchange\FetchQueryResult.cs" />
-    <Compile Include="DataExchange\QueryResult.cs" />
+    <Compile Include="Localization\LocalizationExtension.cs" />
+    <Compile Include="Localization\MultiResourceMap.cs" />
+    <Compile Include="Localization\MultiResourceMapKey.cs" />
+    <Compile Include="Localization\MultiResourceMapKeyParseException.cs" />
+    <Compile Include="Localization\ResourceMap.cs" />
+    <Compile Include="Localization\ResourceMapBase.cs" />
+    <Compile Include="Localization\ResourceTypeCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\DialogButtons.cs" />
-    <Compile Include="Services\DialogResult.cs" />
-    <Compile Include="Services\DialogType.cs" />
-    <Compile Include="Services\IDialogService.cs" />
-    <Compile Include="Services\ILocalizationService.cs" />
-    <Compile Include="Services\IService.cs" />
-    <Compile Include="Services\IServiceProvider.cs" />
-    <Compile Include="Services\ServiceBase.cs" />
-    <Compile Include="Services\ServiceProvider.cs" />
-    <Compile Include="Services\ServiceRegistrationException.cs" />
-    <Compile Include="Utilities\CollectionExtensions.cs" />
-    <Compile Include="Utilities\EnumUtil.cs" />
-    <Compile Include="Utilities\ReflectionUtil.cs" />
-    <Compile Include="Utilities\StringExtensions.cs" />
-    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Utilities\FrameworkElementExtensions.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Yetibyte.FridgeMvvm\Yetibyte.FridgeMvvm.csproj">
+      <Project>{72e11a00-c79f-4651-ae80-84d9d2f13348}</Project>
+      <Name>Yetibyte.FridgeMvvm</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
